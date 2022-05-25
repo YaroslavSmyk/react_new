@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
 class GoodButton extends Component {
-  handleClick(event) {
-    console.log(event.target)
-   alert('Good job!');
+  handleClick(e) {
+   alert(e.target.textContent);
   }
 
   render() {

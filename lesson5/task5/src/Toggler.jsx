@@ -5,19 +5,19 @@ import React, { Component } from 'react';
     constructor(props) {
       super(props);
       this.state = {
-        counter: 'Off',
+        counter: false,
     }
   }
 
   onButton =() => {
     this.setState({
-      counter: "On",
+      counter: !this.state.counter,
     });
   };
 
   render() {
     return (
-      <div className="toggler" onClick={this.onButton}>{this.state.counter}</div>
+      <div className="toggler" onClick={this.onButton}>{this.state.counter? "On": "Off"}</div>
     );
   }
   }

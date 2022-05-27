@@ -1,21 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+const Login = (props) => {
 
+    return <button onClick={props.onLogin}>Login</button>;
+};
 
-class Login extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: '',
-    };
-  }
-
-
-  render() {
-    return (
-
-    );
-  }
-}
 export default Login;
-

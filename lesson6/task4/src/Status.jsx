@@ -6,8 +6,9 @@ import Offline from './Offline';
 class Status extends Component {
   constructor(props) {
     super(props);
+    console.log(props)
     this.state = {
-      isOnline: false,
+      isOnline: props.isOnline,
     };
   }
 
@@ -21,7 +22,7 @@ class Status extends Component {
     return (
       <div>
         {this.state.isOnline ? (
-          <Online isOnline={this.props.isOnline} />
+          <Online isOnline={this.state.isOnline} />
         ) : (
           <Offline isOnline={this.setText} />
         )}

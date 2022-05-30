@@ -7,21 +7,24 @@ class Status extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOnline: true,
+      isOnline: false,
     };
   }
 
   setText = () => {
     this.setState({
-      isOnline: false,
+      isOnline: true,
     });
   };
 
   render() {
     return (
       <div>
-          {this.state.isOnline? <Online isOnline={this.state.isOnline}/> :
-          <Offline isOnline={this.setText}/>}
+        {this.state.isOnline ? (
+          <Online isOnline={this.props.isOnline} />
+        ) : (
+          <Offline isOnline={this.setText} />
+        )}
       </div>
     );
   }

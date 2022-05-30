@@ -20,11 +20,8 @@ class Status extends Component {
   render() {
     return (
       <div>
-        {this.state.isOnline ? (
-          <Online isOnline={this.state.isOnline} />
-        ) : (
-          <Offline isOnline={this.setText} />
-        )}
+          {this.state.isOnline? <Online isOnline={this.state.isOnline}/> :
+          <Offline isOnline={this.setText}/>}
       </div>
     );
   }

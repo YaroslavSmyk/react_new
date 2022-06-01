@@ -4,6 +4,7 @@ class Life extends Component {
   constructor(props) {
     super(props);
     console.log('constructor: good place to create state');
+    return nextProps.number % 2;
   }
 
   componentDidMount() {

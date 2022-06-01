@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Life extends Component {
   constructor(props) {
     super(props);
-    console.log('consrtuctor: good place to creat state');
+    console.log('constructor: good place to creat state');
   }
 
   componentDidMount() {

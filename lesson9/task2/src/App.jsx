@@ -6,7 +6,7 @@ class App extends Component {
         super(props)
       }
   createUser = (userData) => {
-    // console.log(userData);
+    console.log(userData);
   };
 
   render() {

@@ -14,7 +14,7 @@ class UserForm extends Component {
   setRef = (node) => {
     // this.setState({ formRef: node })
     this.formRef = node;
-    // this.props.onSubmit(this.state)
+    this.props.onSubmit(this.formData)
   };
 
   render() {

@@ -3,6 +3,17 @@ import Login from './Login';
 import Logout from './Logout';
 import Spinner from './Spinner';
 
+// state
+// isLoggedIn: bool
+// isProcessing: bool
+//
+
+// algo
+// 1. swow Login
+// 2. after Login - show Spinner
+// 3. gide Spinner
+// 4. after Logout
+
 class Auth extends Component {
   constructor(props) {
     super(props);

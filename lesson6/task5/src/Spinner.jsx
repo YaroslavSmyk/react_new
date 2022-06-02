@@ -1,5 +1,7 @@
 import React from 'react';
 
+// in: obj (suze: number)
+// output: jsx
 const Spiner = (props) => {
   return (
     <span

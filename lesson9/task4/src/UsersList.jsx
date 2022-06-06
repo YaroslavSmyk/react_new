@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Filter from './Filter.jsx';
 import User from './User.jsx';
 
-class UserList extends Component {
+class UsersList extends Component {
   state = {
     input: '',
   };
@@ -33,4 +33,4 @@ return value ===''? this.props.users : this.props.users.filter((user) => user.na
   }
 }
 
-export default UserList;
+export default UsersList;

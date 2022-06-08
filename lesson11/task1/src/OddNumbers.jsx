@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class OddNimbers extends Component {
+class OddNumbers extends Component {
   shouldComponentUpdate(nextProps) {
     return nextProps.number % 2 === 1;
   }
@@ -15,4 +15,4 @@ class OddNimbers extends Component {
   }
 }
 
-export default OddNimbers;
+export default OddNumbers;

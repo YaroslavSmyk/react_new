@@ -22,7 +22,7 @@ Dialog.propTypes ={
     children: PropTypes.element.isRequired,
     title: PropTypes.string,
     onClose: PropTypes.func.isRequired,
-}
+};
 
 Dialog.defaultProps = {
     title: "",

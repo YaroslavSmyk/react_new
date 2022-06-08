@@ -3,22 +3,21 @@ import Numbers from "./Numbers";
 import EvenNumbers from "./EvenNumbers";
 import OddNumbers from "./OddNumbers";
 
-
 class App extends Component {
   state = {
     number: 0,
   };
 
   componentDidMount() {
-   this.intervalId = setInterval(() => {
+    this.intervalId = setInterval(() => {
       this.setState({
-        number: this.state.number + 1
+        number: this.state.number + 1,
       });
     }, 1000);
   }
 
   componentWillUnmount() {
-      clearInterval(this.intervalId);
+    clearInterval(this.intervalId);
   }
 
   render() {

@@ -1,2 +1,7 @@
 node_modules
 dist
+review_build
+build
+temp
+tmp
+package-lock.json

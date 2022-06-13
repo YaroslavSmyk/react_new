@@ -3,34 +3,34 @@ import Task from "./Task";
 import CreateTaskInput from "./CreateTaskInput";
 import PropTypes from "prop-types";
 
-// const apiUrl = "https://626c06265267c14d566b9473.mockapi.io/api/v1/users";
+const apiUrl = "https://626c06265267c14d566b9473.mockapi.io/api/v1/TodoList";
 
-// const getUrl = () => {
-//   return fetch(apiUrl, {
-//     method: "GET",
-//     headers: {
-//       "Content-Type": "application/json;charset=utf-8",
-//     },
-//     body: JSON.stringify(),
-//   });
-// };
+const getTasks = () => {
+  return fetch(apiUrl)
+  .then((res)=> {
+      console.log(res);
+      if(res.ok) {
+          return res.json();
+      }
+  });
+};
 
 class TasksList extends Component {
   state = {
     tasks: [],
   };
 
-  fetchUserData = () => {
-    const userUrl = "https://626c06265267c14d566b9473.mockapi.io/api/v1/users";
-    fetch(userUrl)
-      .then((response) => response.json())
-      .then((tasks) =>
-        this.setState({
-            tasks,
-        })
-      );
-  };
+  componentDidMount() {
+    this.fetchTasks();
+  }
 
+ fetchTasks = () => {
+    getTasks().then((dataArray) => {
+        this.setState({
+            tasks: dataArray,
+        }); 
+    });
+ };
 
   render() {
     return (

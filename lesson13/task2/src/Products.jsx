@@ -6,7 +6,7 @@ function Products({ match }) {
   return (
     <div className="page__content">
       <h1>Products</h1>
-      <ul clasNames="navigation">
+      <ul className="navigation">
         <li className="navigation__item">
           <Link to={`${match.url}/ball`}>Ball</Link>
         </li>

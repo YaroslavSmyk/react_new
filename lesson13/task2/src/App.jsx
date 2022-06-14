@@ -7,12 +7,12 @@ const App = () => {
   return (
     <div className="page">
       <BrowserRouter>
-        <ul clasNames="navigation">
+        <ul className="navigation">
           <li className="navigation__item">
             <Link to="/">Home</Link>
           </li>
           <li className="navigation__item">
-            <Link tof="/products">Products</Link>
+            <Link to="/products">Products</Link>
           </li>
         </ul>
         <Route exact path="/">

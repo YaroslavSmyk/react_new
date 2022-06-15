@@ -5,11 +5,11 @@ const ConnectionStatus = () => {
 
   useEffect(() => {
     const handeleOn = () => {
-      setStatus(false);
+      setStatus(true);
     };
 
     const handeleOff = () => {
-      setStatus(true);
+      setStatus(false);
     };
 
     window.addEventListener("online", handeleOn);
